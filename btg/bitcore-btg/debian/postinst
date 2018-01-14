@@ -2,13 +2,13 @@
 
 case "$1" in
 	configure)
-		adduser --system --home /opt/satoshilabs/bitcore-btg/home \
-			--quiet --gecos "satoshilabs bitcore-btg" bitcore-btg
-		chown -R bitcore-btg /opt/satoshilabs/bitcore-btg/home
+		adduser --system --home /opt/bitcore-btg/home \
+			--quiet --gecos "bitcore-btg" bitcore-btg
+		chown -R bitcore-btg /opt/bitcore-btg/home
 		;;
 	abort-upgrade|abort-remove|abort-deconfigure)
 	;;
-	
+
 	*)
 	    echo "postinst called with unknown argument \`$1'" >&2
 	    exit 1

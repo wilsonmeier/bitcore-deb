@@ -1,6 +1,6 @@
 all:
-	git clone https://github.com/satoshilabs/bitcore
-	cd bitcore && git checkout 8c777990712d8ac1383579524dfabdf0c6046f46
+	git clone https://github.com/BTCGPU/bitcore
+	cd bitcore && git checkout 7d48f3bdfd9e6d99057f937fa9667899ba5d642d
 	cd bitcore && rm -rf .git # Delete .git folder to reduce space
 	cd bitcore && yarn
 	rm -rf bitcore/node_modules/bitcore-node/bin/*.gz

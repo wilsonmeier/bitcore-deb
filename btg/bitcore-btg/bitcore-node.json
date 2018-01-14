@@ -16,10 +16,10 @@
       "routePrefix": "api"
     },
     "bitcoind": {
-      "sendTxLog": "/opt/satoshilabs/bitcore-btg/home/.bitcore/pushtx.log",
+      "sendTxLog": "/opt/bitcore-btg/home/.bitcore/pushtx.log",
       "spawn": {
-        "datadir": "/opt/satoshilabs/bitcore-btg/home/.bitcore/data",
-        "exec": "/opt/satoshilabs/bitcore-btg/bitcore/node_modules/bitcore-node/bin/bgoldd",
+        "datadir": "/opt/bitcore-btg/home/.bitcore/data",
+        "exec": "/opt/bitcore-btg/bitcore/node_modules/bitcore-node/bin/bgoldd",
         "rpcqueue": 1000,
         "rpcport": 8342,
         "zmqpubrawtx": "tcp://127.0.0.1:28342",

@@ -1,13 +1,13 @@
 [Unit]
-Description=Satoshilabs bitcore-btg
+Description=Bitcoin Gold developers bitcore-btg
 
 [Service]
-ExecStart=/opt/satoshilabs/bitcore-btg/bitcore/bin/bitcored
+ExecStart=/opt/bitcore-btg/bitcore/bin/bitcored
 Restart=always
 RestartSec=5
 TimeoutStopSec=900
 User=bitcore-btg
-WorkingDirectory=/opt/satoshilabs/bitcore-btg/home
+WorkingDirectory=/opt/bitcore-btg/home
 
 [Install]
 WantedBy=multi-user.target
