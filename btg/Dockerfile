@@ -14,5 +14,5 @@ RUN apt-get update && \
     apt-get -qy install nodejs python make build-essential devscripts dh-systemd
 RUN npm install -g yarn
 ADD bitcore-btg/ /root/bitcore-btg
+RUN curl https://keybase.io/karel_3d/pgp_keys.asc | gpg --import
 RUN ( cd /root/bitcore-btg && debuild -uc -us )
-
